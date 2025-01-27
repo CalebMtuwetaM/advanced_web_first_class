@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPL Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
+        .table-container {
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 16px;
+            text-align: center;
+            background-color: #1e1e1e;
+            border: 1px solid #444;
+        }
+
+        thead {
+            background-color: #333;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #444;
+        }
+
+        td:last-child {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .circle {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .win {
+            background-color: green;
+        }
+
+        .draw {
+            background-color: gray;
+        }
+
+        .lose {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Club</th>
+                    <th>MP</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>GF</th>
+                    <th>GA</th>
+                    <th>GD</th>
+                    <th>Pts</th>
+                    <th>Last 5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Liverpool</td>
+                    <td>22</td>
+                    <td>16</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>54</td>
+                    <td>21</td>
+                    <td>33</td>
+                    <td>53</td>
+                    <td class="last5">
+                        <div class="circle win">✓</div>
+                        <div class="circle draw">-</div>
+                        <div class="circle win">✓</div>
+                        <div class="circle win">✓</div>
+                        <div class="circle win">✓</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Arsenal</td>
+                    <td>23</td>
+                    <td>13</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>44</td>
+                    <td>21</td>
+                    <td>23</td>
+                    <td>47</td>
+                    <td class="last5">
+                        <div class="circle win">✓</div>
+                        <div class="circle draw">-</div>
+                        <div class="circle win">✓</div>
+                        <div class="circle win">✓</div>
+                        <div class="circle win">✓</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nottingham Forest</td>
+                    <td>23</td>
+                    <td>15</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>33</td>
+                    <td>23</td>
+                    <td>10</td>
+                    <td>48</td>
+                    <td class="last5">
+                        <div class="circle win">✓</div>
+                        <div class="circle lose">✗</div>
+                        <div class="circle win">✓</div>
+                        <div class="circle win">✓</div>
+                        <div class="circle lose">✗</div>
+                    </td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

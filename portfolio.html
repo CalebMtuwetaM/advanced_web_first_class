@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caleb Mtuweta | Cybersecurity Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #f9fafb;
+      color: #1f2937;
+    }
+    header {
+      background: #fff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #374151;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #3b82f6;
+    }
+    .hero {
+      text-align: center;
+      padding: 6rem 2rem;
+      background: linear-gradient(to bottom right, #e0f2fe, #ffffff);
+    }
+    .hero img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #3b82f6;
+      margin-bottom: 1rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+    }
+    .section {
+      max-width: 960px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .project-card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background: #f3f4f6;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+      color: #6b7280;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+    }
+    .contact-form button {
+      background-color: #3b82f6;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .social-links {
+      margin-top: 1rem;
+    }
+    .social-links a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: #2563eb;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Caleb Mtuweta</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="photo.jpg" alt="Caleb Mtuweta" />
+    <h1>Cybersecurity Enthusiast & Software Engineer</h1>
+    <p>CEH | Cybercrime & Digital Forensics | Ethical Hacking | Developer</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/caleb-mtuweta-495a03276/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/CalebMtuwetaM" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a cybersecurity student with a focus on cybercrime and forensics, currently pursuing the CEH certification.
+      I’ve worked as a Red Teamer in a financial institution and for the United Nations. I enjoy Capture The Flag (CTF)
+      competitions, especially OSINT challenges. Passionate about threat intelligence, ethical hacking, and writing secure code.
+    </p>
+  </section>
+
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Expense Tracker</h3>
+        <p>A Flask + React app that tracks daily expenses via M-Pesa SMS parsing and stores them in MongoDB.</p>
+      </div>
+      <div class="project-card">
+        <h3>Blackboard Automation</h3>
+        <p>Python script that logs into Blackboard, scrapes assignment due dates, and adds them to Google Calendar.</p>
+      </div>
+      <div class="project-card">
+        <h3>Cyber Threat Intelligence Dashboard</h3>
+        <p>A tool to visualize threat feeds and indicators of compromise (IOCs) for threat hunting and analysis.</p>
+      </div>
+      <div class="project-card">
+        <h3>Gym Management System</h3>
+        <p>Java + MySQL based system for tracking memberships, trainers, and sessions at a local gym.</p>
+      </div>
+      <div class="project-card">
+        <h3>Advanced Web First Class</h3>
+        <p>A repository demonstrating advanced web development practices. <a href="https://github.com/CalebMtuwetaM/advanced_web_first_class" target="_blank">View on GitHub</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Caleb Muhubiri Mtuweta. All rights reserved.</p>
+  </footer>
+</body>
+</html>
